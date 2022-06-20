@@ -1,0 +1,84 @@
+.card-about-me {
+    padding: 2.5rem;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 2px 0;
+    cursor: pointer;
+    font-size: 19px;
+    margin-top: 2em;
+    background: #FDD231;
+}
+
+.card-about-me .title {
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #05386B;
+}
+
+.card-about-me .desc {
+    opacity: .8;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 1.3em;
+    max-width: 70%;
+    min-height: 60px;
+}
+
+.card-about-me .learn-more {
+    margin: 0;
+    color: #05386B;
+}
+
+.card-about-me-a:hover {
+    text-decoration: none;
+}
+
+.card-about-me-a:hover p.learn-more {
+    text-decoration: underline;
+}
+
+.card-about-me img {
+    position: absolute;
+    top: 14%;
+    right: -37%;
+    width: 95%;
+    height: 95%;
+    transform: rotate(-17deg);
+    transition: all .3s;
+}
+
+.card-about-me:hover img {
+    top: 10%;
+    right: -35%;
+    transform: scale(1.1) rotate(-17deg);
+}
+
+@media screen and (min-width: 0px) and (max-width: 1010px) {
+
+    .card-about-me-a {
+        padding: 0;
+    }
+
+    .card-about-me {
+        margin-top: 2em;
+        min-height: 300px;
+        border-radius: 0;
+    }
+
+    .card-about-me img {
+        top: initial;
+        bottom: -14%;
+        right: -5%;
+        width: 45%;
+        height: 45%;
+    }
+
+    .card-about-me:hover img {
+        top: initial;
+        bottom: -10%;
+        right: -5%;
+        transform: scale(1.1) rotate(-7deg);
+    }
+}

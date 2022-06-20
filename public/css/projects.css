@@ -1,0 +1,77 @@
+.card-project {
+    padding: 2.5rem;
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 2px 0;
+    cursor: pointer;
+    font-size: 19px;
+    margin-top: 2em;
+    background: #FDD231;
+}
+
+.all-projects> :nth-child(even)> :nth-child(1) {
+    flex-direction: row-reverse;
+}
+
+.card-project-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-project-desc .title {
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #05386B;
+}
+
+.card-project-desc .desc,
+.tech-logo {
+    opacity: .8;
+    color: #333;
+    margin-top: 10px;
+    /* margin-bottom: 1.3em; */
+    min-height: 60px;
+}
+
+.card-project-desc .tech {
+    margin: 0;
+    color: #05386B;
+}
+
+.card-project-desc .learn-more {
+    margin: 0;
+    color: #05386B;
+}
+
+.card-project-img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.card-project-a:hover {
+    text-decoration: none;
+}
+
+.card-project-a:hover .learn-more {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1028px) {
+
+    .card-project,
+    .all-projects> :nth-child(2)> :nth-child(1) {
+        flex-direction: column;
+    }
+
+    .card-project-desc .learn-more {
+        margin-bottom: 1rem;
+    }
+
+}

@@ -1,0 +1,49 @@
+@import "partials/navbar.css";
+@import "partials/title.css";
+@import "partials/skills.css";
+@import "partials/about-me.css";
+@import "projects.css";
+@import "hobbies.css";
+
+body {
+    background-color: #EDF5E1;
+    text-align: left;
+}
+
+section {
+    padding: 5% 15% 1%;
+}
+
+section:last-of-type {
+    padding: 5% 15%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+
+/* Headings */
+
+.section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #05386B;
+}
+
+.secondary-section-heading {
+    color: #379683;
+    font-size: 2rem;
+    line-height: 1.5;
+}
