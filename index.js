@@ -33,6 +33,11 @@ app.get("/projects", function (req, res) {
     res.render("projects");
 });
 
-app.listen(4000, () => {
-    console.log('Serving on port 4000')
-})
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port, function() {
+  console.log("Server started succesfully");
+});
